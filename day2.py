@@ -9,6 +9,9 @@ class HogwartsMember:
         self.birthyear = birthyear
         self.sex = sex
 
+    def __repr__(self):
+        return f"{self.__class__.__name__}({self._name}, birthyear: {self.birthyear})"
+
     def says(self, words):
         return f"{self._name} says {words}"
 
